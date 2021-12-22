@@ -16,10 +16,16 @@ const Hero = (props) => (
         Fullstack Web-Developer
       </SectionTitle>
       <SectionText>
-        Need to write some meaningful information that will sum up my ideals
+        Full stack developer graduate with a passion of developing scalable web
+        applications. <br />
+        I'm efficient and highly motivated.
       </SectionText>
-      <Button onClick={() => (window.location = "https://www.google.co.il/")}>
-        Learn More
+      <Button
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/ohadmy/", "_blank")
+        }
+      >
+        Learn More (Demo)
       </Button>
     </LeftSection>
   </Section>
