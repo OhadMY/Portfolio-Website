@@ -86,8 +86,8 @@ export const UtilityList = styled.ul`
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
+  font-weight: bold;
   padding: 1rem 1.5rem;
-
   color: #fff;
   background: ${({ alt }) =>
     alt
@@ -102,6 +102,7 @@ export const ExternalLinks = styled.a`
         ? "linear-gradient(135deg, #ff622e 30%, #B133FF 100%)"
         : "linear-gradient(135deg, #00DBD8 5%, #B133FF 100%)"};
     font-size: 1.75rem;
+    font-weight: bold;
   }
 `;
 
