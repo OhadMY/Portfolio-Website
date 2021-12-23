@@ -10,7 +10,7 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 0;
   place-items: center;
   column-gap: 2rem;
   row-gap: 3rem;
@@ -41,6 +41,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #9cc9e3;
   padding: 0.5rem 0;
+  margin-top: 1.75rem;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
@@ -49,7 +50,7 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
+  background: white;
 `;
 
 export const Intro = styled.div`
@@ -68,7 +69,7 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: self-start;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
@@ -86,11 +87,21 @@ export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+
+  color: #fff;
+  background: ${({ alt }) =>
+    alt
+      ? "linear-gradient(320deg, #ff622e 50%, #B133FF 100%)"
+      : "linear-gradient(320deg, #00DBD8 -10%, #B133FF 100%)"};
+
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: #801414;
+    background: ${({ alt }) =>
+      alt
+        ? "linear-gradient(135deg, #ff622e 30%, #B133FF 100%)"
+        : "linear-gradient(135deg, #00DBD8 5%, #B133FF 100%)"};
+    font-size: 1.75rem;
   }
 `;
 
