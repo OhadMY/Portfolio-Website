@@ -97,10 +97,6 @@ export const ExternalLinks = styled.a`
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: ${({ alt }) =>
-      alt
-        ? "linear-gradient(135deg, #ff622e 30%, #B133FF 100%)"
-        : "linear-gradient(135deg, #00DBD8 5%, #B133FF 100%)"};
     font-size: 1.75rem;
     font-weight: bold;
   }
