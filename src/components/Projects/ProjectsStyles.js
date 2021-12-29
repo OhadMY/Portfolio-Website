@@ -110,9 +110,19 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 20px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 20px 40px 20px 40px;
+    flex-wrap: wrap;
+  }
 `;
+
 export const Tag = styled.li`
   color: #7570d2;
   font-size: 1.5rem;
+
+  @media screen and (max-width: 470px) {
+    margin: 0 10px 0 10px;
+  }
 `;
