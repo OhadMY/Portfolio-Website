@@ -49,12 +49,14 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://www.linkedin.com/in/ohadmy/" target="_blank">
-        <AiFillLinkedin size="3rem"></AiFillLinkedin>
-      </SocialIcons>
-      <SocialIcons href="https://github.com/OhadMY" target="_blank">
-        <AiFillGithub size="3rem"></AiFillGithub>
-      </SocialIcons>
+      <SocialContainer header>
+        <SocialIcons href="https://www.linkedin.com/in/ohadmy/" target="_blank">
+          <AiFillLinkedin size="3rem"></AiFillLinkedin>
+        </SocialIcons>
+        <SocialIcons href="https://github.com/OhadMY" target="_blank">
+          <AiFillGithub size="3rem"></AiFillGithub>
+        </SocialIcons>
+      </SocialContainer>
     </Div3>
   </Container>
 );

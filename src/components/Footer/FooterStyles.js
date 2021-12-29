@@ -99,20 +99,19 @@ export const Support = styled.p`
 `;
 
 export const SocialContainer = styled.div`
-  margin-left: -7px;
   display: flex;
   align-items: center;
   width: 125px;
   justify-content: space-between;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    justify-content: center;
+    justify-content: ${(props) => (props.header ? "space-between" : "center")};
     padding-right: 16px;
     flex-wrap: wrap;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    justify-content: start;
+    justify-content: ${(props) => (props.header ? "space-between" : "start")};
     padding-right: 16px;
     flex-wrap: wrap;
   }
