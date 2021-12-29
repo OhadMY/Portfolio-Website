@@ -1,6 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact } from "react-icons/di";
-import { RiServerLine } from "react-icons/ri";
+import { DiReact, DiRedis, DiStreamline } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -24,7 +23,7 @@ const Technologies = () => (
     </SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <DiReact size="3rem" style={{ "margin-right": "5px" }} />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -35,7 +34,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <RiServerLine size="3rem" style />
+        <DiRedis size="3rem" style={{ "margin-right": "5px" }} />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
@@ -46,7 +45,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem" />
+        <DiStreamline size="3rem" style={{ "margin-right": "5px" }} />
         <ListContainer>
           <ListTitle>Database</ListTitle>
           <ListParagraph>

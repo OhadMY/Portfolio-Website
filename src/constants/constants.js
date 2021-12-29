@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "ToDos Vanilla",
     description:
-      "This is a classic To-Do list where you can leave future tasks which saves locally to your browser.",
+      "This is a To-Do list where you can add tasks which saves locally to your browser.",
     image: "/images/4.png",
     tags: ["Javascript", "HTML"],
     source: "https://github.com/OhadMY/ToDos-Vanilla",

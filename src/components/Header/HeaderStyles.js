@@ -29,12 +29,18 @@ export const Div1 = styled.div`
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
+    margin-top: 15px;
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 3 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  @media ${(props) => props.theme.breakpoints.xxl} {
+    grid-area: 1 / 3 / 2 / 4;
+    dispaly: flex;
+    justify-content: center;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -42,9 +48,11 @@ export const Div2 = styled.div`
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
+  margin-top: -15px;
   @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 0;
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
@@ -52,6 +60,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
+  padding: 25px;
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);

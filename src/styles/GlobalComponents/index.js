@@ -3,13 +3,18 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "32px 0px 0")};
+  padding: ${(props) => (props.nopadding ? "0" : "32px 0 0 0")};
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
+  padding-left: 10px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    flex-direction: column;
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 14px 0;
@@ -38,13 +43,13 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+  padding: ${(props) => (props.main ? "58px 0 16px 10px" : "0")};
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: ${(props) => (props.main ? "40px 0 12px 10px" : "0")};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -53,7 +58,7 @@ export const SectionTitle = styled.h2`
     font-size: ${(props) => (props.main ? "28px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    padding: ${(props) => (props.main ? "16px 0 0 8px" : "0")};
     max-width: 100%;
   }
 `;
@@ -63,24 +68,26 @@ export const SectionText = styled.p`
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: 3.6rem;
+  padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.5);
+  margin-left: ${(props) => (props.nomarginleft ? "0" : "10px")};
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
-    padding-bottom: 24px;
+    padding: 0 0 24px 0;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 16px;
+    padding: ${(props) => (props.nopadding ? "0 0 15px 0" : "0 0 16px 0")};
   }
 `;
 
 export const SectionDivider = styled.div`
+  margin-left: 10px;
   width: 185px;
   height: 6px;
   border-radius: 10px;
