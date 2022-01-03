@@ -23,7 +23,7 @@ const Technologies = () => (
     </SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" style={{ "margin-right": "5px" }} />
+        <DiReact size="3rem" style={{ "marginRight": "5px" }} />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -34,7 +34,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiRedis size="3rem" style={{ "margin-right": "5px" }} />
+        <DiRedis size="3rem" style={{ "marginRight": "5px" }} />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
@@ -45,7 +45,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiStreamline size="3rem" style={{ "margin-right": "5px" }} />
+        <DiStreamline size="3rem" style={{ "marginRight": "5px" }} />
         <ListContainer>
           <ListTitle>Database</ListTitle>
           <ListParagraph>
