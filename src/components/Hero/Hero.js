@@ -22,10 +22,10 @@ const Hero = (props) => (
       </SectionText>
       <Button
         onClick={() =>
-          window.open("https://www.linkedin.com/in/ohadmy/", "_blank")
+          window.open("/assets/OhadMorYosefResume.pdf", "_blank")
         }
       >
-        Learn More (Demo)
+        Learn More
       </Button>
     </LeftSection>
   </Section>
