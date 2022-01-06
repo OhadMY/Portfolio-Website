@@ -41,8 +41,12 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
-  { startYear: 2013, endYear: 2016, description: "Military service IDF" },
+export const AboutData = [
+  {
+    startYear: 2013,
+    endYear: 2016,
+    description: "Military service IDF - C.O.G.A.T",
+  },
   {
     startYear: 2017,
     endYear: 2020,
