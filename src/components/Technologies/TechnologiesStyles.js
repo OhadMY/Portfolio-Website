@@ -36,7 +36,7 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin: 30px 10px;
+  margin: 30px 10px 30px 10px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     gap: 24px;
@@ -45,6 +45,7 @@ export const List = styled.ul`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
+    margin: 30px 10px 0 10px;
   }
 `;
 
