@@ -16,7 +16,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="about">
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
@@ -32,7 +32,7 @@ const Footer = () => {
       <SocialIconsContainer>
         <CompanyContainer>
           <Support>
-            For all enquiries, please contant me using the info above or the
+            For all enquiries, please contact me using the info above or the
             social media
           </Support>
         </CompanyContainer>
